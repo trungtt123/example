@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '1000mb' }));
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.json('Hello World');
 });
 
 app.set('port', port);
